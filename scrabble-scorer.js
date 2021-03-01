@@ -142,8 +142,6 @@ function runProgram() {
   scorerPrompt();
   transform(oldPointStructure);
   console.log(`\nScore for '${wordPrompt}': ${scoringAlgorithms[scorerPrompt].scoringFunction(wordPrompt)}`);
-  console.log(newPointStructure);
-  console.log(scoringAlgorithms);
      
 }
 
