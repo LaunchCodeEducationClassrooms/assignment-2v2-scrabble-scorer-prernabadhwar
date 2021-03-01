@@ -87,25 +87,25 @@ function scrabbleScore(word) {
 
 }
 
-simpleScore = {
+let objSimpleScore = {
   name: 'Simple Score',
   description: 'Each letter is worth 1 point.',
   scoreFunction: simpleScore
 };
 
-vowelBonusScore = {
+let objVowelBonusScore = {
   name: 'Bonus Vowels',
   description: 'Vowels are 3 pts, consonants are 1 pt.',
   scoreFunction: vowelBonusScore
 };
 
-scrabbleScore = {
+let objScrabbleScore = {
   name: 'Scrabble',
   description: 'The traditional scoring algorithm.',
   scoreFunction: scrabbleScore
 };
 
-const scoringAlgorithms = [simpleScore,vowelBonusScore,scrabbleScore];
+const scoringAlgorithms = [objSimpleScore,objVowelBonusScore,objScrabbleScore];
 
 function scorerPrompt() {
   
