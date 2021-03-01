@@ -130,7 +130,7 @@ function transform(pointStructure) {
       newPointStructure[pointStructure[key][i].toLowerCase()] = Number(key);
     }
     
-    //newPointStructure[" "] = 0;
+    //newPointStructure[' '] = 0;
   }
 
   return newPointStructure;
