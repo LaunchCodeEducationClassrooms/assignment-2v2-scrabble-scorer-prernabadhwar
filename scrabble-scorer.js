@@ -130,7 +130,7 @@ function transform(pointStructure) {
       newPointStructure[pointStructure[key][i].toLowerCase()] = Number(key);
     }
     
-    newPointStructure[" "] = 0;
+    //newPointStructure[" "] = 0;
   }
 
   return newPointStructure;
@@ -142,6 +142,8 @@ function runProgram() {
   scorerPrompt();
   transform(oldPointStructure);
   console.log(`\nScore for '${wordPrompt}': ${scoringAlgorithms[scorerPrompt].scoringFunction(wordPrompt)}`);
+  console.log(newPointStructure);
+  console.log(scoringAlgorithms);
      
 }
 
