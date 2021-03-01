@@ -90,19 +90,19 @@ function scrabbleScore(word) {
 let objSimpleScore = {
   name: 'Simple Score',
   description: 'Each letter is worth 1 point.',
-  scoreFunction: simpleScore
+  scoringFunction: simpleScore
 };
 
 let objVowelBonusScore = {
   name: 'Bonus Vowels',
   description: 'Vowels are 3 pts, consonants are 1 pt.',
-  scoreFunction: vowelBonusScore
+  scoringFunction: vowelBonusScore
 };
 
 let objScrabbleScore = {
   name: 'Scrabble',
   description: 'The traditional scoring algorithm.',
-  scoreFunction: scrabbleScore
+  scoringFunction: scrabbleScore
 };
 
 const scoringAlgorithms = [objSimpleScore,objVowelBonusScore,objScrabbleScore];
@@ -141,7 +141,7 @@ function runProgram() {
   initialPrompt();
   scorerPrompt();
   transform(oldPointStructure);
-  console.log(`\nScore for '${wordPrompt}': ${scoringAlgorithms[scorerPrompt].scoreFunction(wordPrompt)}`);
+  console.log(`\nScore for '${wordPrompt}': ${scoringAlgorithms[scorerPrompt].scoringFunction(wordPrompt)}`);
      
 }
 
